@@ -1,0 +1,31 @@
+{
+  "employee": [
+    {
+      "name": "chan",
+      "email": "chan@gmail.com",
+      "phone": "123456",
+      "active": true,
+      "id": 1
+    },
+    {
+      "name": "chanchan",
+      "email": "chan@gmail.com",
+      "phone": "1234567890",
+      "active": true,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "christian",
+      "email": "christian@gmail.com",
+      "phone": "1234567890"
+    },
+    {
+      "name": "christian",
+      "email": "christian@gmail.com",
+      "phone": "",
+      "active": true,
+      "id": 4
+    }
+  ]
+}
