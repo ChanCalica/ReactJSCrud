@@ -22,7 +22,7 @@ steps:
 - script: |
     pushd $(uiSource)
     npm install
-    CI= npm run build
+    npm run build
     popd 
   displayName: 'npm install and build'
 
