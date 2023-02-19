@@ -4,10 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- main
+- master
 
 variables:
-  uiSource: 'src'
+  uiSource: 'ReactJSCrud-main'
   uiBuild: '$(uiSource)/build'
 
 pool:
@@ -16,15 +16,16 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '19.x'
   displayName: 'Install Node.js'
 
 - script: |
     pushd $(uiSource)
     npm install
     npm run build
-    popd 
+    popd
   displayName: 'npm install and build'
+  #workingDirectory: '$(Build.SourcesDirectory)/ReactJSCrud-main'
 
 - task: ArchiveFiles@2
   inputs:
